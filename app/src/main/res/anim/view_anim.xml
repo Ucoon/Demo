@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--set：interpolator：动画采用的插值器
+    shareInterpolator：集合中的动画是否和集合共享同一个插值器-->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:shareInterpolator="true">
+    <!--平移：fromXDelta、toXDelta：水平方向移动的起始值和结束值
+    fromYDelta、toYDelta：竖直方向移动的起始值和结束值-->
+    <translate
+        android:duration="2000"
+        android:fromXDelta="0"
+        android:toXDelta="100%"
+        android:fromYDelta="0"
+        android:toYDelta="100%"></translate>
+    <!--缩放：fromXScale、toXScale：水平方向缩放的起始值和结束值
+    fromYScale、toYScale：竖直方向缩放的起始值和结束值
+    pivotX、pivotY：轴点的位置-->
+    <scale
+        android:duration="2000"
+        android:fromXScale="1"
+        android:toXScale="0.5"
+        android:fromYScale="1"
+        android:toYScale="0.5"
+        android:pivotX="50%"
+        android:pivotY="50%"></scale>
+    <!--旋转 fromDegrees：旋转的起始值；toDegrees：旋转的结束值
+    pivotX、pivotY：轴点的位置
+     fillAfter：动画结束后View是否停留在结束位置-->
+    <rotate
+        android:duration="2000"
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:fillAfter="true"></rotate>
+
+    <!--渐变 fromAlpha：渐变的起始值，toAlpha：渐变的结束值-->
+    <alpha
+        android:duration="2000"
+        android:fromAlpha="1.0"
+        android:toAlpha="0"
+        ></alpha>
+</set>
