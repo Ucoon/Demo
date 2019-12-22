@@ -51,10 +51,4 @@ public class PropertyAnimation {
         animatorSet.setDuration(2000);
         animatorSet.start();
     }
-
-    private void animatorFroResourse(Context context, View view){
-        AnimatorSet animatorSet = (AnimatorSet) AnimatorInflater.loadAnimator(context, R.animator.property_anim);
-        animatorSet.setTarget(view);
-        animatorSet.start();
-    }
 }
